@@ -7,16 +7,21 @@
         <meta charset="utf-8">
         <meta name="description" content="Sample Pictures modified">
         <meta name="keywords" content=" Photoshop, pictures, lab">
-
+        <!-- hamburger menu bars-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
     </head>
     <body>
         <div class="grid">
             <header>
+               
                 <h1> My Photoshop Projects</h1>
             </header>
-            <div id="top">
-            <nav class="flex_nav">
+            
+            <div id="top" class="sectionGroup" data-scroll>
+            <nav class="flex_nav" id="flex_nav">
                 <ul >
                     <li> <a href="#intro">Introduction</a></li>
                     <li> <a href="#gallery">Gallery</a></li> 
@@ -26,11 +31,13 @@
                     <li> <a href="#photo4">Photo4</a></li>
                     <li> <a href="#photo5">Photo5</a></li>
                     <li> <a href="#about">About Me</a></li>
+                    <a href="javascript:void(0);" class="hamIcon" onClick="collapseMenu()"> 
+                <i class="fa fa-bars"></i> </a>
                 </ul>
             </nav>
 
             </div> <!-- end id top -->
-            <main id="intro">
+            <main id="intro" class="sectionGroup" data-scroll>
                 <h2>Introduction</h2>
                 <p> 
                     Welcome to my page showing a few of my favorite projects modifying images.
@@ -48,19 +55,19 @@
                 </p>
             </main>
 
-            <aside id="gallery">
+            <aside id="gallery" class="sectionGroup" data-scroll>
                 <h2> Picture Gallery - final version</h2>
                   <div class="gal">
-                    <a href="#photo1"><figure> <img src="images/madridlunaLab1c.jpg" alt=""> <figcaption> Cygne Sauvage </figcaption> </figure></a>
-                    <a href="#photo2"><figure> <img src="images/madridlunaLab1b.jpg" alt=""> <figcaption> Picture of Picture </figcaption> </figure></a>
-                    <a href="#photo3"><figure> <img src="images/madridlunalabposter.jpg" alt=""> <figcaption> Renaissance Fair Poster </figcaption> </figure></a>
-                    <a href="#photo4"><figure> <img src="images/madridlunalab2a.jpg" alt=""> <figcaption> We Are GIANT - Magazine cover </figcaption> </figure>	</a>  
-                    <a href="#photo5"><figure> <img src="images/madridlunalab2b.jpg" alt=""> <figcaption> US Flag with Eagle Silhoutte </figcaption> </figure></a>	  
+                    <a href="#photo1"><figure class="sectionGroup" data-scroll> <img src="images/madridlunaLab1c.jpg" alt=""> <figcaption> Cygne Sauvage </figcaption> </figure></a>
+                    <a href="#photo2"><figure class="sectionGroup" data-scroll> <img src="images/madridlunaLab1b.jpg" alt=""> <figcaption> Picture of Picture </figcaption> </figure></a>
+                    <a href="#photo3"><figure class="sectionGroup" data-scroll> <img src="images/madridlunalabposter.jpg" alt=""> <figcaption> Renaissance Fair Poster </figcaption> </figure></a>
+                    <a href="#photo4"><figure class="sectionGroup" data-scroll> <img src="images/madridlunalab2a.jpg" alt=""> <figcaption> We Are GIANT - Magazine cover </figcaption> </figure>	</a>  
+                    <a href="#photo5"><figure class="sectionGroup" data-scroll> <img src="images/madridlunalab2b.jpg" alt=""> <figcaption> US Flag with Eagle Silhoutte </figcaption> </figure></a>	  
                                        
                   </div>
             </aside>
 
-            <section id="photo1">
+            <section id="photo1"  class="sectionGroup" data-scroll>
                 <h2>Photo1- Cygne Sauvage</h2>
                 <p>
                     The image used came from the New York Public Library - Digital Collections
@@ -76,13 +83,13 @@
 
                 </p>
                 <div class="pic">
-                    <figure> <img src="images/lab1corignal.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
-                    <figure> <img src="images/madridlunaLab1c.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/lab1corignal.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/madridlunaLab1c.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
 
                 </div>
             </section>
 
-            <section id="photo2">
+            <section id="photo2" class="sectionGroup" data-scroll>
                 <h2>Photo2 - Picture of Picture</h2>
                 <p>
                     How many times have you seen a photo at a family/friends place and you want a copy of it.  In this case, the image was of 
@@ -96,13 +103,13 @@
                     Although, it looks good I may want to play around a little more on trying to make the image a bit clearer but all in all I was happy with the results.
                 </p>
                 <div class="pic">
-                    <figure> <img src="images/lab1boriginal.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
-                    <figure> <img src="images/madridlunaLab1b.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/lab1boriginal.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/madridlunaLab1b.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
 
                 </div>
             </section>
 
-            <section id="photo3">
+            <section id="photo3" class="sectionGroup" data-scroll>
                 <h2>Photo3 - Renaissance Fair Poster</h2>
                 <p>
                     So I really liked working on this project as I was about to add an effect background (clouds) and color could be adjusted.  Added the Phoenix on it to keep with 
@@ -122,14 +129,14 @@
                     using Rectangle Marquee tool and change Luminosity/Opacity of the image.
                 </p>
                 <div class="pic">
-                    <figure> <img src="images/lab5_original_phoenix.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
-                    <figure> <img src="images/lab5-original-castle.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
-                    <figure> <img src="images/madridlunalabposter.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/lab5_original_phoenix.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/lab5-original-castle.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/madridlunalabposter.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
 
                 </div>
             </section>
 
-            <section id="photo4">
+            <section id="photo4" class="sectionGroup" data-scroll>
                 <h2>Photo4 - We Are GIANT Magazine Cover</h2>
                 <p> Okay, so this past year we took a family trip to San Francisco to go see the Giants play at their home stadium.  
                     So this was a very happy moment for my husband to be at the game with his kids.   
@@ -149,13 +156,13 @@
                     This will definitly be an image that will get framed somewhere in our house.
                 </p>
                 <div class="pic">
-                    <figure> <img src="images/originallab2a.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
-                    <figure> <img src="images/madridlunalab2a.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
+                    <figure  class="sectionGroup" data-scroll> <img src="images/originallab2a.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/madridlunalab2a.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
 
                 </div>
             </section>
 
-            <section id="photo5">
+            <section id="photo5" class="sectionGroup" data-scroll>
                 <h2>Photo5 - US Flag with Eagle Silhoutte</h2>
                 <p>
                     Okay, so I think this is one that I am most proud of.  I tried using my own pictures initially but I just did not like the way the pictures came out so I started fresh.
@@ -171,14 +178,14 @@
                     I chose to add this image last as this one was my favorite of all the labs.
                 </p>
                 <div class="pic">
-                    <figure> <img src="images/original_1_lab2b.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
-                    <figure> <img src="images/original_2_lab2b.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
-                    <figure> <img src="images/madridlunalab2b.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/original_1_lab2b.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/original_2_lab2b.jpg" alt=""> <figcaption> Original Picture </figcaption> </figure>
+                    <figure class="sectionGroup" data-scroll> <img src="images/madridlunalab2b.jpg" alt=""> <figcaption> Final Version </figcaption> </figure>
 
                 </div>
             </section>
 
-            <footer id="about">
+            <footer id="about" class="sectionGroup" data-scroll>
                 <h2> About Me</h2>
                 <p>
                 Hi, my name is Elizabeth Madrid Luna, I was born and raised in El Paso, Texas.  
@@ -196,10 +203,22 @@
                     <p class="headerImg"> Header Photo by: Skitterphoto (<a href="http://pixabay.com">http://pixabay.com)</a></p>
                     <p>
                     Webmaster: Elizabeth Madrid Luna <br>
-                    Last update: 5/11/2020
+                    Last update: March 2021
                     </p>
                 </div>
             </footer>
         </div>
+        <script>
+            ScrollOut({ })
+
+            function collapseMenu() {
+                let cn = document.getElementById("flex_nav");
+                if (cn.className === "flex_nav") {
+                cn.className += " responsive";
+                } else {
+                cn.className = "flex_nav";
+                }
+            }
+        </script>
     </body>
 </html>
