@@ -1,8 +1,8 @@
 
 document.getElementById("mainNav").innerHTML += '<a href="index.html" id="home"> Home</a>  \
-      <a href="portfolio.html" id="portfolio">Portfolio</a>  \
-      <a href="aboutme.html" id="aboutMe">About Me</a>  \
-      <a href="contact.html" id="contact">Contact</a>  \
+      <a href="#portfolioS" id="portfolio">Portfolio</a>  \
+      <a href="#about" id="aboutMe">About Me</a>  \
+      <a href="#contactS" id="contact">Contact</a>  \
       <a href="javascript:void(0);" class="hamIcon" onClick="collapseMenu()">  \
           <i class="fa fa-bars"></i>  \
       </a>';
@@ -31,25 +31,25 @@ function updateActive(pageclass) {
 
 // // // Modal
 
-// var modal = document.getElementById("modalDiv");
-// var trigModal = document.getElementById("sendMsg");
-// var span = document.getElementsByClassName("close")[0];
+var modal = document.getElementById("modalDiv");
+var trigModal = document.getElementById("sendMsg");
+var span = document.getElementsByClassName("close")[0];
 
-// // Open Modal 
-// trigModal.onclick = function() {
-//   modal.style.display = "block";
-// }
+// Open Modal 
+trigModal.onclick = function() {
+  modal.style.display = "block";
+}
 
-// // Close Modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
+// Close Modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 //Line Animation
 function homeAnimation() {

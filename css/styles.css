@@ -25,7 +25,7 @@ h1 {
 
 /* Add a black background color to the top navigation */
 .mainNav, #tryThis {
-    background-color: rgb(13, 2, 77);
+    background-color: rgb(5, 1, 31);
     overflow: hidden;
     float: right;
 }
@@ -61,6 +61,7 @@ h1 {
     clear: both;
     display: block;
     background-image: url('https://live.staticflickr.com/7339/12489696063_bce1b20efa_b.jpg');
+    /* background-image: url('../images/road-background.jpg'); */
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -120,7 +121,7 @@ h1 {
     padding: 20px;
     font-size: 1.2em;
     border-radius: 2em;
-  }
+}
 
   .leftSide {
     float: left;
@@ -138,11 +139,14 @@ h1 {
 
   .projectGroup img {
     width: 40%;
-    border-radius: 45%;
+    border-radius: 50%;
+    opacity: 0.8;
   }
 
   .projectGroup img:hover {
     border-radius: 10%;
+    opacity: 1;
+  
   }
 }
 
@@ -226,7 +230,6 @@ h1 {
   width: 60;
   padding: 2em;
   margin-top: 2em;
-  background-color: white;
   border-width: 1px;
   flex: 1;
   align-items: center;
@@ -287,6 +290,12 @@ input {
     cursor: pointer;
   }
 
+  .contactSection {
+    background-image: url('../images/stars-1128772_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
   /* Portfolio */
 
   .flex-container {
@@ -330,7 +339,9 @@ input {
   }
 
   .projectGroup[data-scroll="in"], 
-  .portfolioSection[data-scroll="in"] {
+  .portfolioSection[data-scroll="in"],
+  .contactSection[data-scroll="in"],
+  .aboutSection[data-scroll="in"] {
     opacity: 1;
     transform: translateY(-50px);
   }
@@ -348,4 +359,16 @@ input {
   padding-top: 1em;
   padding-bottom: 2em;
   font-size: 3.5em;
+}
+
+#about {
+  background-image: url('../images/am_back.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about h1 {
+  color:  rgb(5, 1, 31);
 }

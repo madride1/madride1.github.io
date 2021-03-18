@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- hamburger menu bars-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
@@ -37,65 +38,120 @@
 
         </section>
  
-        <section>
+        <!-- <section>-->
             <!-- The Modal -->
-            <div id="modalDiv" class="modal">
+            <!-- <div id="modalDiv" class="modal"> -->
 
             <!-- Modal content -->
-            <div class="modal-content">
+            <!-- <div class="modal-content">
                 <span class="close">&times;</span>
                 <p>Some text in the Modal..</p>
             </div>
 
-            </div>
-        </section>
+            </div> -->
+        </section> 
 
-        <div class="portfolioSection" data-scroll>
-        <section class="flex-container" id="portList">
-        <h1> Portfolio</h1>
-    
-        <div class="projectGroup" data-scroll>
-            <div class="projectImage">
-                <a href="SingleWithModal/index.html">
-                    <img class="singlePg leftSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
-                </a>
-            </div>
-            <div class="projectSummary rightSide"> <p></p></div>
+        <div id="portfolioS" class="portfolioSection" data-scroll>
+            <section class="flex-container" id="portList">
+                <h1> Portfolio</h1>
+            
+                <div class="projectGroup" data-scroll>
+                    <div class="projectImage">
+                        <a href="SingleWithModal/index.html">
+                            <img class="singlePg leftSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
+                        </a>
+                    </div>
+                    <div class="projectSummary rightSide"> <p></p></div>
+                </div>
+                <div class="projectGroup" data-scroll>
+                    <div class="projectImage">
+                    <div class="projectSummary leftSide"> <p></p></div>
+                    <img class="multiPg rightSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
+                    </div>
+                </div>
+                <div class="projectGroup" data-scroll>
+                    <div class="projectImage">
+                    <img class="bootPg leftSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
+                    </div>
+                    <div class="projectSummary rightSide"> <p></p></div>
+                </div>
+                <div class="projectGroup" data-scroll>
+                    <div class="projectImage">
+                    <div class="projectSummary leftSide"> <p></p></div>
+                    <img class="dbPg rightSide" src="images/rpsGame.png" alt="Trivia Game Website">
+                    </div>
+                </div>
+                <div class="projectGroup" data-scroll>
+                    <div class="projectImage">
+                    <div class="projectSummary rightSide"> <p></p></div>
+                        <a href="graphicDesign/index.html">
+                        <img class="gpD leftSide" src="images/gdPage.png" alt="Trivia Game Website">
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="projectGroup" data-scroll>
-            <div class="projectImage">
-            <div class="projectSummary leftSide"> <p></p></div>
-            <img class="multiPg rightSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
-            </div>
+
+        <div id="about" class="aboutSection" data-scroll>
+            <section class="flex-container" >
+                <h1> About Me</h1>
+            
+
+            </section>
         </div>
-        <div class="projectGroup" data-scroll>
-            <div class="projectImage">
-            <img class="bootPg leftSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
-            </div>
-            <div class="projectSummary rightSide"> <p></p></div>
-        </div>
-        <div class="projectGroup" data-scroll>
-            <div class="projectImage">
-            <div class="projectSummary leftSide"> <p></p></div>
-            <img class="dbPg rightSide" src="images/rpsGame.png" alt="Trivia Game Website">
-            </div>
-        </div>
-        <div class="projectGroup" data-scroll>
-            <div class="projectImage">
-            <div class="projectSummary rightSide"> <p></p></div>
-                <a href="graphicDesign/index.html">
-                <img class="gpD leftSide" src="images/gdPage.png" alt="Trivia Game Website">
-                </a>
-            </div>
-        </div>
-    </section></div>
+
+        
+        <div id="contactS" class="contactSection" data-scroll>
+            <section class="flex-container" >
+                <h1> Contact </h1>
+                <div id="contactOptions">
+                    <h3>
+                 <a href="mailto:elizabeth.ma_luna@yahoo.com" id="myEmail">
+                     <i class="material-icons">email</i>
+                </a> 
+                OR
+                 <span id="sendMsg"> Send Message </span>
+                </h3>
+                </div>
+            
+                <section>
+                    <!--The Modal-->
+                    <div id="modalDiv" class="modal">
+        
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p> 
+                            <div id="formH">
+                                <h4>Send me a message</h3>
+                            </div>
+                            <div id="contactF">
+                                <label for="inputName"> Name: </label>
+                                <input type="text" name="inputName">
+                                <label for="inputEmail"> Email: </label>
+                                <input type="email" name="inputEmail">
+                                <label for="inputPhone"> Phone: </label>
+                                <input type="tel" name="inputPhone">
+                                <label for="inputMessage">Message</label>
+                                <input type="text" name="inputMessage">
+                                <button type="reset"> Reset</button>
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </p>
+                    </div>
+        
+                    </div>
+                </section>
+
+            </section>
     </main> 
-  <script>
-            ScrollOut({ })
-        </script>
+
     <!-- JavaScript functions -->
     <script src="scripts/scripts.js"> </script>
-    <script>updateActive("home");
-            homeAnimation();</script>
+    <script>
+        updateActive("home");
+        homeAnimation();
+        ScrollOut({ })
+    </script>
 </body>
 </html>
