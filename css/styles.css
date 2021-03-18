@@ -8,9 +8,10 @@
 
 body {
     background-color: rgb(67, 67, 80);
-    background-image: url('images/ELbackground.gif');
+    /* background-image: url('../images/ELbackground.gif'); */
     margin: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
 }
 
 h1 {
@@ -19,7 +20,7 @@ h1 {
   font-family: 'Libre Baskerville', serif;
   text-align: center;
   padding-top: 2em;
-  font-size: 2.3em;
+  font-size: 2.5em;
 }
 
 /* Add a black background color to the top navigation */
@@ -59,14 +60,12 @@ h1 {
 #headerSection {
     clear: both;
     display: block;
-    background-color: #ddd;
-    width: 100%;
-    height: 20%;
     background-image: url('https://live.staticflickr.com/7339/12489696063_bce1b20efa_b.jpg');
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
-
 
 /* Responsive */
 /* screens less than 600 pixels wide */
@@ -160,6 +159,7 @@ h1 {
     font-weight: 900;
     font-size: 2.5em;
     color: white;
+    padding-left: 2em;
   }
   .nameLine .text-wrapper {
     position: relative;
@@ -191,6 +191,7 @@ h1 {
     font-weight: 900;
     font-size: 2em;
     color: whitesmoke;
+    padding-left: 2.5em;
   }
   
   .positionLine .letter {
@@ -328,7 +329,23 @@ input {
     transition: all 1s;
   }
 
-  .projectGroup[data-scroll="in"] {
+  .projectGroup[data-scroll="in"], 
+  .portfolioSection[data-scroll="in"] {
     opacity: 1;
     transform: translateY(-50px);
   }
+
+  .portfolioSection {
+    /* background-color: whitesmoke; */
+    background-image: url("../images/code2.png");
+    background-size: contain;
+    background-repeat: repeat-y;
+    width: 100%;    
+  }
+
+  
+.portfolioSection h1 {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-size: 3.5em;
+}

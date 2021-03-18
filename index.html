@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
     <title>Portfolio: Elizabeth Luna</title>
 </head>
 <body>
@@ -17,6 +19,7 @@
     </div>
 
     <main>
+     
         <section id="headerSection">
             <h2 class="nameLine">
                 <span class="text-wrapper">
@@ -27,13 +30,13 @@
             </h2>
             <h3 class="positionLine">
                 <span class="text-wrapper">
-                  
-                  <span class="letters">Web Developer</span>
+                
+                <span class="letters">Web Developer</span>
                 </span>
-              </h3>
+            </h3>
 
         </section>
-
+ 
         <section>
             <!-- The Modal -->
             <div id="modalDiv" class="modal">
@@ -46,8 +49,50 @@
 
             </div>
         </section>
-    </main> 
 
+        <div class="portfolioSection" data-scroll>
+        <section class="flex-container" id="portList">
+        <h1> Portfolio</h1>
+    
+        <div class="projectGroup" data-scroll>
+            <div class="projectImage">
+                <a href="SingleWithModal/index.html">
+                    <img class="singlePg leftSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
+                </a>
+            </div>
+            <div class="projectSummary rightSide"> <p></p></div>
+        </div>
+        <div class="projectGroup" data-scroll>
+            <div class="projectImage">
+            <div class="projectSummary leftSide"> <p></p></div>
+            <img class="multiPg rightSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
+            </div>
+        </div>
+        <div class="projectGroup" data-scroll>
+            <div class="projectImage">
+            <img class="bootPg leftSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
+            </div>
+            <div class="projectSummary rightSide"> <p></p></div>
+        </div>
+        <div class="projectGroup" data-scroll>
+            <div class="projectImage">
+            <div class="projectSummary leftSide"> <p></p></div>
+            <img class="dbPg rightSide" src="images/rpsGame.png" alt="Trivia Game Website">
+            </div>
+        </div>
+        <div class="projectGroup" data-scroll>
+            <div class="projectImage">
+            <div class="projectSummary rightSide"> <p></p></div>
+                <a href="graphicDesign/index.html">
+                <img class="gpD leftSide" src="images/gdPage.png" alt="Trivia Game Website">
+                </a>
+            </div>
+        </div>
+    </section></div>
+    </main> 
+  <script>
+            ScrollOut({ })
+        </script>
     <!-- JavaScript functions -->
     <script src="scripts/scripts.js"> </script>
     <script>updateActive("home");
