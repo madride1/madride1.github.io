@@ -82,38 +82,38 @@ h1 {
 
 
 
-  .leftSide {
-    float: left;
-  }
+    .leftSide {
+      float: left;
+    }
 
-  .rightSide {
-    float: right;
-  }
+    .rightSide {
+      float: right;
+    }
 
-  .projectSummary {
-    width: 60%;
-    background-color: black;
+    .projectSummary {
+      width: 60%;
+      background-color: black;
 
-  }
+    }
 
-  .projectGroup img {
-    width: 40%;
-    border-radius: 50%;
-    opacity: 0.8;
-  }
+    .projectGroup img {
+      width: 40%;
+      border-radius: 50%;
+      opacity: 0.8;
+    }
 
-  .projectGroup img:hover {
-    border-radius: 10%;
-    opacity: 1;
-  
-  }
+    .projectGroup img:hover {
+      border-radius: 10%;
+      opacity: 1;
+    
+    }
 
 } /* end of media */
 
   /* Animation on header */
   #headerSection h2 {
     margin-bottom: 0;
-    padding-top: 10em;
+    padding-top: 6em;
     padding-bottom: 0;
   }
 
