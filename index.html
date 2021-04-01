@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
     <title>Portfolio: Elizabeth Luna</title>
@@ -32,7 +33,7 @@
             <h3 class="positionLine">
                 <span class="text-wrapper">
                 
-                <span class="letters">Web Developer</span>
+                <span class="letters">Web Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                 </span>
             </h3>
 
@@ -40,15 +41,15 @@
  
         <!-- <section>-->
             <!-- The Modal -->
-            <!-- <div id="modalDiv" class="modal"> -->
+            <div id="mainModalDiv" class="mainModal"> -->
 
             <!-- Modal content -->
-            <!-- <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <div class="mainModal-content">
+                    <span class="mainClose">&times;</span>
+                    <div id="mainProject"></div>
+                    
+                </div>
             </div>
-
-            </div> -->
         </section> 
 
         <div id="portfolioS" class="portfolioSection" data-scroll>
@@ -57,6 +58,7 @@
             
                 <div class="projectGroup" data-scroll>
                     <div class="projectImage">
+                        <a id="swm">
                         <a href="SingleWithModal/index.html">
                             <img class="singlePg leftSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
                         </a>
@@ -64,10 +66,12 @@
                     <div class="projectSummary rightSide"> <p></p></div>
                 </div>
                 <div class="projectGroup" data-scroll>
-                    <div class="projectImage">
-                    <div class="projectSummary leftSide"> <p></p></div>
+                    <div class="projectImage">    
                     <img class="multiPg rightSide" src="images/KidsTrivia.png" alt="Trivia Game Website">
                     </div>
+                    <div class="projectSummary leftSide"> <p></p>
+                </div>
+
                 </div>
                 <div class="projectGroup" data-scroll>
                     <div class="projectImage">
@@ -77,17 +81,18 @@
                 </div>
                 <div class="projectGroup" data-scroll>
                     <div class="projectImage">
-                    <div class="projectSummary leftSide"> <p></p></div>
                     <img class="dbPg rightSide" src="images/rpsGame.png" alt="Trivia Game Website">
                     </div>
+                    <div class="projectSummary leftSide"> <p></p></div>
                 </div>
                 <div class="projectGroup" data-scroll>
                     <div class="projectImage">
-                    <div class="projectSummary rightSide"> <p></p></div>
-                        <a href="graphicDesign/index.html">
+                        <!-- <a href="graphicDesign/index.html"> --> 
+                            <a id="gd">
                         <img class="gpD leftSide" src="images/gdPage.png" alt="Trivia Game Website">
                         </a>
                     </div>
+                    <div class="projectSummary rightSide"> <p></p></div>
                 </div>
             </section>
         </div>

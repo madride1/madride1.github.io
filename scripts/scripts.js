@@ -51,6 +51,29 @@ window.onclick = function(event) {
   }
 }
 
+
+var mainSpan = document.getElementsByClassName("mainClose")[0];
+var mainModal = document.getElementById("mainModalDiv");
+// Close Modal
+mainSpan.onclick = function() {
+  mainModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == mainModal) {
+    mainModal.style.display = "none";
+  }
+}
+
+jQuery(document).ready(function() {
+  jQuery("#gd").on("click", function() {
+      mainModal.style.display = "block";
+      jQuery.get('index_gd.html',function(data){
+          jQuery("#mainProject").html(data);
+      });    
+  })
+})
+
 //Line Animation
 function homeAnimation() {
   var textWrapper = document.querySelector('.nameLine .letters');
