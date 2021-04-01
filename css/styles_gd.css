@@ -288,7 +288,7 @@ nav a{
       position: fixed;
       top: 0;
       right: 0;
-      transform: translate(-1em, 1em);
+      transform: translate(-0.5em, 1.5em);
       font-size: 2em;
     }
 
@@ -340,13 +340,15 @@ nav a{
       display: block;
       top: 0;
       right: 0;
-      transform: translate(0,0);
+      transform: translate(0, 0.5em);
       font-size: 2em;
     }
     .flex_nav.responsive li a {
       float: none;
       display: block;
+      position:relative;
       text-align: left;
+      font-size: 1.5em;
     }
     #top{
         grid-column: unset;
@@ -355,23 +357,23 @@ nav a{
         top: 0;
         right: 0;
         transform: translate(-1em, 0em);
+        z-index: 3;
     }
     .flex_nav.responsive ul{
         background-color: #434D6E;
         text-align: left;
         width: 100%;
+        color: white;
+        margin-right: 2em;
     }
 
     .flex_nav.responsive ul li {
         padding: 0.2em;
         text-align: left;
-        margin-right: 20em;
+        margin-right: 2em;
         padding-left: 2em;
     }
-    .flex_nav.responsive a{
-        font-size: 2em;
-        color: white;
-    }
+    
     .flex_nav.responsive a:link { color: white; }
     .flex_nav.responsive a:visited { color: rgb(29, 173, 10); }
     .flex_nav.responsive a:hover { 
