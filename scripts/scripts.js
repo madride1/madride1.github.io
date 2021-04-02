@@ -71,7 +71,14 @@ jQuery(document).ready(function() {
       jQuery.get('index_gd.html',function(data){
           jQuery("#mainProject").html(data);
       });    
-  })
+  });
+
+  jQuery("#swm").on("click", function() {
+    mainModal.style.display = "block";
+    jQuery.get('kidsTrivia.html',function(data){
+        jQuery("#mainProject").html(data);
+    });    
+  });
 })
 
 //Line Animation

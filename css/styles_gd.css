@@ -6,7 +6,7 @@
     box-sizing: inherit;
 }
 
-body{
+#gdBody{
     background-color: rgb(217, 217, 248);
     font-size: 1.1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -289,7 +289,7 @@ nav a{
       top: 0;
       right: 0;
       transform: translate(-0.5em, 1.5em);
-      font-size: 2em;
+      font-size: 1.4em;
     }
 
     .flex_nav ul {
@@ -341,14 +341,13 @@ nav a{
       top: 0;
       right: 0;
       transform: translate(0, 0.5em);
-      font-size: 2em;
     }
     .flex_nav.responsive li a {
       float: none;
       display: block;
       position:relative;
       text-align: left;
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
     #top{
         grid-column: unset;
