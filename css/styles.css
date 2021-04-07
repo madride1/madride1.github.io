@@ -296,11 +296,17 @@ input {
     cursor: pointer;
   }
 
+  #contactMain,
   .contactSection {
     background-image: url('../images/stars-1128772_1280.jpg');
+    opacity: 0.8;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+  }
+
+  #contactOptions {
+    opacity: unset;
   }
   /* Portfolio */
 

@@ -1,8 +1,8 @@
 
-document.getElementById("mainNav").innerHTML += '<a href="index.html" id="home"> Home</a>  \
+document.getElementById("mainNav").innerHTML = '<a href="index.html" id="home"> Home</a>  \
       <a href="#portfolioS" id="portfolio">Portfolio</a>  \
       <a href="#about" id="aboutMe">About Me</a>  \
-      <a href="#contactS" id="contact">Contact</a>  \
+      <a id="contact">Contact</a>  \
       <a href="javascript:void(0);" class="hamIcon" onClick="collapseMenu()">  \
           <i class="fa fa-bars"></i>  \
       </a>';
@@ -76,6 +76,13 @@ jQuery(document).ready(function() {
   jQuery("#swm").on("click", function() {
     mainModal.style.display = "block";
     jQuery.get('kidsTrivia.html',function(data){
+        jQuery("#mainProject").html(data);
+    });    
+  });
+
+  jQuery("#contact").on("click", function() {
+    mainModal.style.display = "block";
+    jQuery.get('contact.html',function(data){
         jQuery("#mainProject").html(data);
     });    
   });
