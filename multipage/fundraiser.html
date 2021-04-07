@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <!--- 
+        Elizabeth Madrid Luna
+        IMED-1341 Semester Project
+        Images obtained with permission form Parkway Elementary school and vendor.  
+        I just worked on a live version for this page and incorporated it into this project.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parkway PTA current fundraiser information and place your order and pay via paypal.">
+    <meta name="keywords" content="pta, parkway, fundraiser, tshirts, t-shirt, hoodie, form, order, paypal">
+    <meta name="author" content="Elizabeth Madrid Luna">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <title>Parkway PTA Fundraiser - Spirit Shirt </title>
+</head>
+<body>
+    <header>
+        <div id="head">
+          <h2> <img id="logo" src="images/cropped-parkway_logo-1.png" alt="Parkway Elementary Logo"><span id="headTitle"> Parkway PTA</span></h2>
+        </div>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a href="fundraiser.html">Fundraiser</a>
+          <a href="committee.html">Committee</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="about.html">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </header>
+    
+
+    <main>
+        <div class="grid">
+    <div class="mainContent">
+        <div class="topContent">    
+            <img src="images/Parkway3trans.gif" alt="parkway panther" class="pantherImg"/>
+            <span><strong>2020 Parkway <br> PTA Spirit Shirts <br>
+            Orders due by <br>
+             <span class="greenText">Tuesday, December 8th</span>.</strong></span>
+            
+            <p class="medTxt">
+            <strong>You will need to use Paypal to make your purchase.  
+            Any debit/credit card will work, and you do not need to have a Paypal account.</strong>
+            </p><p class="medTxt">Thank you for supporting Parkway PTA  </p>
+        </div> <!--- topContent -->
+        <div class="midContent">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal"><input name="cmd" type="hidden" value="_s-xclick" />
+            <input id="hostId" name="hosted_button_id" type="hidden" value="TM2Y7MVXHJHGE" />
+            <table>
+                <tbody>
+                    <tr>
+                        <td><input name="on2" type="hidden" value="Student" /><strong>Student Full Name *</strong></td>
+                    </tr>
+                    <tr>
+                        <td><input id="tshirtName" maxlength="200" name="os2" required="" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><input name="on3" type="hidden" value="Grade" /><strong>Grade *</strong></td>
+                    </tr>
+                    <tr>
+                        <td><select id="tshirtGrade" name="os3">
+                            <option disabled="disabled" selected="selected">--- select one ---</option>
+                            <option value="KG">Kindergarten</option>
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                            <option value="5th">5th</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><input name="on4" type="hidden" value="Teacher" /><strong>Teacher</strong></td>
+                    </tr>
+                    <tr>
+                        <td><input id="tshirtTeacher" maxlength="200" name="os4" type="text" /></td>
+                    </tr>
+                </tbody>
+            </table><table><thead><tr>
+                <th>
+                    T-Shirt
+                </th>
+            </tr></thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/green-tshirt.gif" alt="green tshirt" width="216" height="216" /><img src="images/purple-tshirt.gif" alt="purple tshirt" width="216" height="216" /></td>
+                    </tr>
+                    <tr>
+                        <td><input name="on0" type="hidden" value="Sizes" /><input id="ts" name="os0" type="hidden" /><strong>Size</strong>  <select id="ts1" name="t1">
+                        <option value="Youth S">Youth S</option>
+                        <option value="Youth M">Youth M</option>
+                        <option value="Youth L">Youth L</option>
+                        <option value="Youth XL">Youth XL</option>
+                        <option value="Adult XS">Adult XS</option>
+                        <option value="Adult S">Adult S</option>
+                        <option value="Adult M">Adult M</option>
+                        <option value="Adult L">Adult L</option>
+                        <option value="Adult XL">Adult XL</option>
+                        <option value="Adult 2XL">Adult 2XL</option>
+                        </select>
+                        <input name="on1" type="hidden" value="Color" /><input id="tc" name="os1" type="hidden" /><strong>Color</strong>  <select id="tc1" name="t2">
+                        <option value="Lime">Lime</option>
+                        <option value="Purple">Purple</option>
+                        </select>   <input id="tshirtSubmit" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" type="image" />
+                        <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="paypal add to cart" width="1" height="1" /><br> 
+                        <span class="smallerTxt">NOTE: A new window will open for PayPal cart. Return to this window to add more shirts/hoodies to your cart.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+            <thead><tr><th>
+            Hoodie
+            </th></tr></thead>
+                <tbody>
+                <tr>
+                    <td><img src="images/grey-sweatshirt.gif" alt="grey hoodie" width="216" height="231" /></td>
+                </tr>
+                <tr>
+                    <td><input name="on00" type="hidden" value="Size" /><strong>Size</strong>  <select id="hs" name="os00">
+                    <option value="Youth S">Youth S</option>
+                    <option value="Youth M">Youth M</option>
+                    <option value="Youth L">Youth L</option>
+                    <option value="Youth XL">Youth XL</option>
+                    <option value="Adult S">Adult S</option>
+                    <option value="Adult M">Adult M</option>
+                    <option value="Adult L">Adult L</option>
+                    <option value="Adult XL">Adult XL</option>
+                    <option value="Adult 2XL">Adult 2XL</option>
+                    </select>  <input id="hoodieSubmit" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" type="image" />
+                    <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="paypal add to cart" width="1" height="1"/><br>
+                    <span class="smallerTxt">NOTE: A new window will open for PayPal cart. Return to this window to add more shirts/hoodies to your cart.</span></td>
+                </tr>
+                </tbody>
+                </table>
+            </form>
+        </div><!-- midContent-->
+    </div> <!--- mainContent-->
+    </div> <!-- grid -->
+    </main>
+    <footer class="finalFoot" id="addFoot">
+
+    </footer>
+
+<script src="myFunctions.js" ></script>
+<script>
+    
+$(document).ready(function () {
+    $('#tshirtSubmit').click(function() {
+        $('#hostId').val('TM2Y7MVXHJHGE');
+        $('#ts').val($('#ts1').val());
+        $('#tc').val($('#tc1').val());
+    });
+    $('#hoodieSubmit').click(function() {
+        $('#hostId').val('H53KVNCNUQ5MN');
+        $('#ts').val($('#hs').val());
+        $('#tc').val($('').val());
+    });
+});
+</script>
+</body>
+</html>

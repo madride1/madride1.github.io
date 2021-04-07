@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--- 
+        Elizabeth Madrid Luna
+        IMED-1341 Semester Project
+        Images obtained from personal photos and with permission from Parkway Elementary since I maintain PTA live site.
+        This project was helping me invision possible changes to website.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parkway PTA list of current events and latest news.">
+    <meta name="keywords" content="pta, parkway, news, events">
+    <meta name="author" content="Elizabeth Madrid Luna">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <title>Parkway PTA </title>
+</head>
+<body>
+
+  <header>
+    <div id="head">
+      <h2> <img id="logo" src="images/cropped-parkway_logo-1.png" alt="Parkway Elementary Logo"><span id="headTitle"> Parkway PTA</span></h2>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="fundraiser.html">Fundraiser</a>
+      <a href="committee.html">Committee</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="gridMain">
+
+      <div class="topMainContent">
+        <h2 class="h2Txt">Welcome to the Parkway PTA Website!</h2>
+        <figure> <img id="swap_image" src="images/main/0.gif"
+          alt="school images"></figure>
+      </div><!-- topMainContent-->
+
+      <div class="rightContent">
+         <h2 class="h2Txt">Upcoming Events</h2>
+         <div class="events"></div>
+      </div> <!-- rightContent-->
+
+      <div class="midMainContent">
+         <h2 class="h2Txt">Latest News</h2>
+         <div class="newsReport"></div>
+      </div> <!-- midMainContent-->
+
+      <div class="bottomMainContent">
+        <h2 class="h2Txt">Stay in touch....</h2>
+        <div>Check back often for the latest information.  You can also visit us on <a href="https://www.facebook.com/ParkwayElementaryPTA/" class="extLink" target="_blank"><i class="fa fa-facebook-f"></i></a></div>
+
+
+      </div><!-- bottomMainContent-->
+
+    </div><!--- grid -->
+
+  </main>
+  <footer class="finalFoot" id="addFoot">
+
+  </footer>
+
+  <script src="myFunctions.js" ></script>
+  <script>
+    //event to trigger my function, interval timer.
+    // in my function
+    //random number to randomly pick which image I want
+    //temporary output on what random number came up
+    // output my image to swap_image
+    let myTimer=setInterval(imageRandom,1500);
+    function imageRandom(){
+        let randomNumber = Math.floor(Math.random() * 4);
+        //document.getElementById("check").innerHTML = randomNumber;
+        document.getElementById("swap_image").src ="images/main/" + randomNumber + ".gif";
+    }
+  </script>
+
+</body>
+</html>

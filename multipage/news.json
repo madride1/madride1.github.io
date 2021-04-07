@@ -1,0 +1,28 @@
+{
+    "latest": [
+        {
+            "id": 1,
+            "date": "November 11",
+            "title": "Veterans Day",
+            "description": "Today we celebrated Veterans Day.  Many thanks to all those who have served or are serving and protecting us.  Don't forget to take some time and look at our marquee today for a few of those we are celebrating."
+        },
+        {
+            "id": 2,
+            "date": "November 19",
+            "title": "Pajama Day on Friday November 20th",
+            "description": "Friday is pajama day, all student are welcome to wear their pajama's.  Please no slippers, and be mindful on dress attire for students who will have PE on Friday."
+        },
+        {
+            "id": 3,
+            "date": "November 20",
+            "title": "Early Release",
+            "description": "Friendly reminder, today is an early release day.  All student will be released at 12:45pm.  There will be no-school next week in celebration of Thanksgiving.  Have a safe and fun time off."
+        },
+        {
+            "id": 4,
+            "date": "November 30",
+            "title": "Spirit Shirt Sale",
+            "description": "Our PTA will be selling spirit shirts for this school year.  Order forms will be going out today with more information.  If you have any questions reach out to any PTA committee member."
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "committee": [
+        {
+            "id": 1,
+            "position": "President",
+            "name": "Johnny Appleseed",
+            "email": "president@parkway.com"
+        },
+        {
+            "id": 2,
+            "position": "Parliamentarian",
+            "name": "Mary Contrary",
+            "email": "parlimentarian@parkway.com"
+        },
+        {
+            "id": 3,
+            "position": "Treasurer",
+            "name": "Sydney Jones",
+            "email": "treasurer@parkway.com"
+        },
+        {
+            "id": 4,
+            "position": "Secretary",
+            "name": "Carol James",
+            "email": "secretary@parkway.com"
+        },
+        {
+            "id": 5,
+            "position": "Memberships",
+            "name": "Jake Smith",
+            "email": "membership@parkway.com"
+        },
+        {
+            "id": 6,
+            "position": "Volunteers",
+            "name": "Diana Moon",
+            "email": "volunteer@parkway.com"
+        }
+    ],
+    "positions": [
+        {
+            "id": 1,
+            "position": "President",
+            "description": "Serve as the presiding officer of the Local PTA and presides over executive board and membership meetings. Term is 2 years."
+        },
+        {
+            "id": 2,
+            "position": "Parliamentarian",
+            "description": "Advises the board of directors and members on matters of procedures and serves as a consultant, especially in meetings."
+        },
+        {
+            "id": 3,
+            "position": "Treasurer",
+            "description": "Authorization over association funds and disbursement, maintain budget and accounting."
+        },
+        {
+            "id": 4,
+            "position": "Secretary",
+            "description": "Keep an accurate record of meetings, votes, etc.. which will be maintained as PTA history records."
+        },
+        {
+            "id": 5,
+            "position": "Memberships",
+            "description": "Promote PTA membership benefits throughout the year."
+        },
+        {
+            "id": 6,
+            "position": "Volunteers",
+            "description": "Serve as liason between school and volunteers and promote volunteer opportunites. "
+        }
+    ]
+
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--- 
+        Elizabeth Madrid Luna
+        IMED-1341 Semester Project
+        Image obtained from: http://www.clipartpanda.com/clipart_images/file-type-63100750 license free image.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parkway PTA current volunteer opportunities, find out about background checks and sign-up to volunteer.">
+    <meta name="keywords" content="pta, parkway, volunteer, opportunities, form, background check, voly">
+    <meta name="author" content="Elizabeth Madrid Luna">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Parkway PTA: Volunteer </title>
+</head>
+<body>
+
+  <header>
+    <div id="head">
+      <h2> <img id="logo" src="images/cropped-parkway_logo-1.png" alt="Parkway Elementary Logo"><span id="headTitle"> Parkway PTA</span></h2>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="fundraiser.html">Fundraiser</a>
+      <a href="committee.html">Committee</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="gridMain">
+
+      <div class="topMainContent">
+        <figure> <img class="vImg" src="images/volunteer-clipart-we-love-our-volunteers-clip-art-1209543.jpg" alt="we love volunteers"></figure>
+      </div><!-- topMainContent-->
+
+      <div class="rightContent">
+        <h2 class="h2Txt">Volunteer Opportunities</h2>
+        <div class="volunteerEvents"></div>
+      </div> <!-- rightContent-->
+
+      <div class="midMainContent">
+        <h3> We need YOU!!</h3>
+        <p>
+          If you would like to be an intrical part of Parkway student's lives and are able to help consider volunteering.  We have in-person, at-home and donations opportunities.
+        </p>
+        <p>You can start by filling out the form below so you can be added to our volunteer distribution list. </p>
+        <p>NOTE: for all in-person opportunities you must have completed a <a class="extLink" href="https://www.lisd.net/Domain/195" target="_blank">LISD Background Check</a>.  </p>
+        <p>For additional volunteer opportunities you can go to <a class="extLink" href="https://lewisvilleisd.voly.org/index.html" target="_blank"> Voly </a></p>
+      </div> <!-- midMainContent-->
+      
+      <div class="bottomMainContent">
+        <h2 class="h2Txt" id="vForm">Volunteer Form</h2>
+        <p>Ready to be contacted about volunteer opportunties?  If so, fill out the form below and someone will reach out to you.</p>
+        <form action="mailto:emadridluna1@collin.edu" method="post" enctype="multipart/form-data" name="emailForm">
+        <table class="volunteerTable">
+          <tr>
+            <td>
+            <label for="volunteerName"> Volunteer Name*</label>
+            </td><td>
+            <input type="text" name="volunteerName" id="volunteerName" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label for="volunteerEmail"> Email*</label>
+          </td><td>
+            <input type="email" name="volunteerEmail" id="volunteerEmail" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label for="phone"> Phone Number</label>
+          </td><td>
+            <input type="tel" name="phone" id="phone">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label> Interested in</label><span class="smallerTxt"> <em>  Note:  Check all that apply. </em></span>
+          </td><td>
+            <input type="checkbox" name="opportunity1" id="opportunity1" value="In-Person">
+            <label for="opportunity1"> In-Person</label> <br>
+            <input type="checkbox" name="opportunity2" id="opportunity2" value="At-Home">
+            <label for="opportunity2"> At-Home</label> <br>
+            <input type="checkbox" name="opportunity3" id="opportunity3" value="Donations">
+            <label for="opportunity3"> At-Home</label> <br>
+            
+            </td>
+          </tr></table>
+              <button class="submitBtn"> Submit </button>
+              <a id="resetForm" href="#vForm">Reset</a>
+        
+        
+        
+        </form>
+      </div><!-- bottomMainContent-->
+
+    </div><!--- grid -->
+
+  </main>
+  <footer class="finalFoot" id="addFoot">
+
+  </footer>
+
+  <script src="myFunctions.js" ></script>
+  <script>
+    document.getElementById("resetForm").addEventListener('click', function() {
+    /* reset all user input and result contents */
+    document.getElementById("volunteerName").value = "";
+    document.getElementById("volunteerEmail").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("opportunity1").checked = false;
+    document.getElementById("opportunity2").checked = false;
+    document.getElementById("opportunity3").checked = false;
+    }
+);
+  </script>
+
+</body>
+</html>

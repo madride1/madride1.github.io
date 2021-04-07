@@ -1,0 +1,92 @@
+{
+    "upcoming": [
+        {
+            "id": 1,
+            "date": "November 23 - 27 ",
+            "time": "",
+            "title": "Thanksgiving Break",
+            "description": "No school.  Enjoy your break, stay healthy."
+        },
+        {
+            "id": 2,
+            "date": "November 30 - December 8",
+            "time": "",
+            "title": "Spirit Shirt Sale",
+            "description": "It's that time again to show your Panther Pride and purchase a T-shirt or Hoodie.  Checkout Fundraiser link for more information."
+        },
+        {
+            "id": 3,
+            "date": "December 3",
+            "time": "5:00pm - 6:00pm",
+            "title": "General Meeting",
+            "description": "PTA General Meeting will be held on Thursday from 5:00pm - 6:00pm.  Email will be sent out on December 1st with virtual meeting details.  Hope to see you there."
+        },
+        {
+            "id": 4,
+            "date": "December 18 - January 5",
+            "time": "All Day",
+            "title": "Holiday Break",
+            "description": "No school.  Enjoy your break, stay healthy and see you in the New Year."
+        }
+    ],
+
+    "volunteer": [
+        {
+            "id": 1,
+            "date": "December 7",
+            "time": "10:30am - noon",
+            "title": "T-Shirt Order Collection",
+            "description": "If you have some time we would love help on collecting T-Shirt orders and calculate t-shirt type, count, color, etc...  We will be meeting in the cafeteria."
+        },
+        {
+            "id": 2,
+            "date": "December 16",
+            "time": "1:00pm - 3:00pm",
+            "title": "Goody Bag assembly",
+            "description": "We will be assembling Holiday goodie bags for all students to take home before the Holiday break.  If you have some time stop by and help.  We will be meeting on the stage."
+        }
+    ],
+
+    "activities": [
+        {
+            "id": 1,
+            "activity": "Back-to-School Bash",
+            "description": "Just before the start of the school year this is a nice social gathering to get the year started and a nice meet and greet for incoming Kindergarten families."
+        },
+        {
+            "id": 2,
+            "activity": "Book Fair",
+            "description": "We work with the school library to help decorate, setup, sell and takedown the book fair in both the Fall and Spring."
+        },
+        {
+            "id": 3,
+            "activity": "Field Day",
+            "description": "We work with the school PE teacher(s) to help setup, run stations and take down all the obstacles for the kids to have a fun day in the sun."
+        },
+        {
+            "id": 4,
+            "activity": "Movie Night",
+            "description": "We hold this event to get our Parkway Families together an enjoy a nice night out with friends and watch a movie.  We setup this event and sell concessions."
+        },
+        {
+            "id": 5,
+            "activity": "Field Trip Transportation",
+            "description": "Every grade will have at least one Field Trip that they will be traveling in a school bus.  We provide financial support to help keep cost down for families."
+        },
+        {
+            "id": 6,
+            "activity": "Holiday Parties",
+            "description": "We try to host 2 parties per school year where we provide fun games, activies and snacks for the kids.  We setup, run stations, takedown and cleanup for these activities."
+        },
+        {
+            "id": 7,
+            "activity": "Muffins with Mom and Donuts with Dudes",
+            "description": "Two activities we hold near our hearts as an appreciation to all Mother figures, and Father figures in our students life as an appreciation for all your hard work."
+        },
+        {
+            "id": 8,
+            "activity": "End-of-Year Party",
+            "description": "A good way to celebrate all students hard work with a fun festivity.  We hold the event and setup, run stations and cleanup all stations which include slides, snacks and fun obstacles."
+        }
+    ]
+}
