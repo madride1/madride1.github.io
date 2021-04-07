@@ -69,7 +69,17 @@ h1 {
     background-position: center;
 }
 
+.projectGroup img {
+  width: 40%;
+  border-radius: 50%;
+  opacity: 0.8;
+}
 
+.projectGroup img:hover {
+  border-radius: 10%;
+  opacity: 1;
+
+}
 
 /* Responsive */
 /* screens less than 600 pixels wide */
