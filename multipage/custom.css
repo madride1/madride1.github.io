@@ -202,7 +202,8 @@ main {
 .topContent {
   width: 85%;
   font-size: 1.5em;
-  margin-top: 2em;
+  margin-top: 3em;
+  margin-left: 10%;
 }
 
 
@@ -295,6 +296,10 @@ label {
   margin-left: 50%;
 }
 
+strong {
+  font-family:'The Girl Next Door', cursive;
+  font-size: 1em;
+}
 
 @media only screen and (min-width: 992px) {
 
@@ -353,9 +358,10 @@ label {
   }
 
   .topContent {
-    width: 85%;
+    width: 95%;
     font-size: 1.5em;
     margin-top: 15%;
+    margin-left: 5%;
   }
 
   .mainContent {
@@ -388,6 +394,10 @@ label {
 
   .icon {
     display: none;
+  }
+  .topContent strong {
+    align-content: center;
+    margin: auto;
   }
 }
 
