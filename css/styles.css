@@ -423,14 +423,24 @@ input {
 
 #about h1 {
   color:  rgb(5, 1, 31);
+  font-size: 3.5em;
+  padding-top: 0;
+}
+
+#portList h1 {
+  color: rgb(248,244,244);
+}
+
+.aboutGroup[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(-40px);
 }
 
 .aboutGroup {
   width: 95%;
-  min-height: 80vh;
+  height: 80vh;
   background-color: rgba(0,0,0,0.4);
   border-radius: 2em;
-  font-size: 1.5em;
   margin-top: 2em;
   color: aliceblue;
 }
@@ -445,6 +455,7 @@ input {
 
 .myImg {
   margin-top: 2em;
+  font-size: 1.5em;
 }
 
 #mainIdx {
@@ -457,7 +468,6 @@ input {
   right: 2em;
   font-size: 0.8em;
   display: none;
-  /* width: 20px; */
 }
 
 #returnToTop a {
@@ -545,7 +555,38 @@ input {
     font-size: 2.5em;
   }
 
-}
+  .aboutGroup {
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 2em;
+    font-size: 1.5em;
+    margin-top: 2em;
+    color: aliceblue;
+    font-weight: normal;
+  }
+
+  .aboutGroup img {
+    float: left;
+    width: 50%;
+    border-radius: 2em;
+    margin-left: .5em;
+    margin-right: 1em;
+  }
+
+  #about h1 {
+    padding-top: 0;
+    font-size: 2.5em;
+    margin-top: 0.5em;
+  }
+
+  .projectGroup[data-scroll="in"], 
+  .portfolioSection[data-scroll="in"],
+  .contactSection[data-scroll="in"],
+  .aboutGroup[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(-40px);
+  }
+} /* media max-width: 600px */
 
 @media screen and (min-width: 601px) {
   .iconImg {
@@ -573,5 +614,6 @@ input {
     width: 100%;
     padding-bottom: 2em;
   }
-}
+
+} /* media min-width: 601px */
 

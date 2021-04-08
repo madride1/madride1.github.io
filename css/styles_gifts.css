@@ -13,22 +13,20 @@
   }
 
 .giftMain.container {
-    width: 90%;
+    width: 100%;
 }
 
 .jumbotron {
     background-image: url('../images/headerImg.jpg');
-    height: 22vh;
+    height: 25vh;
     color: white;
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 900;
     text-decoration-line: underline;
     text-shadow:   6px 6px 6px black;
     -webkit-text-stroke: 2px black;
     margin-bottom: 0.5em;
-    /* width: 80%; */
-    /* border-radius: 0.5em; */
-  }
+}
 
 .gifts.navbar{
     /* background-color: #4A8394;
@@ -56,7 +54,7 @@
 
 .giftsintro {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 /* .gifts.intro,
@@ -93,4 +91,19 @@
 
 .text-center li {
     list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        height: 22vh;
+        font-size: 3.5em;
+    }
+
+    .giftsintro {
+        font-size: 1.7em;
+    }
+
+    .giftMain.container {
+        width: 90%;
+    }
 }
