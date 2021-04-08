@@ -194,13 +194,12 @@ h1 {
 /* Contact */
 
 #sendMsg:hover, #contactOptions a:hover{
-  font-size: 2.1em;
-  color:white;
-  text-shadow: 2px 2px 2px rgb(46, 150, 248);
+  font-size: 1.55em;
+  text-shadow: 4px 4px 4px black;
 }
 
 #formH{
-  font-size: 1.5em;
+  font-size: 1.2em;
   color:rgb(13, 2, 77);
   text-align: center;
 }
@@ -224,7 +223,7 @@ h1 {
 
 #contactOptions a, #myEmail i {
   font-size: 1.5em;
-  color: rgb(13, 2, 77);
+  color: antiquewhite;
   text-align: center;
 }
 
@@ -309,10 +308,20 @@ input {
 
   #contactMain {
     /* background-image: url('../images/stars-1128772_1280.jpg'); */
-    background-image: url('../images/contactbk.gif');
+    /* background-image: url('../images/contactbk.gif'); */
+    background-image: url('../images/arboretum.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+  }
+
+  #contactOptions {
+    width: 90%;
+    height: 80vh;
+    margin:auto;
+    align-content: center;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 2em;
   }
 
   #contactMain h1 {

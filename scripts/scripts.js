@@ -92,6 +92,7 @@ jQuery(document).ready(function() {
 
   jQuery("#contact").on("click", function() {
     mainModal.style.display = "block";
+    jQuery(".mainModal-content").css({"background-color":"rgb(223,213,190)"});
     jQuery.get('contact.html',function(data){
         jQuery("#mainProject").html(data);
     });    
