@@ -195,7 +195,7 @@ h1 {
 
 #sendMsg:hover, #contactOptions a:hover{
   font-size: 2.1em;
-  color:rgb(13, 2, 77);
+  color:white;
   text-shadow: 2px 2px 2px rgb(46, 150, 248);
 }
 
@@ -308,21 +308,22 @@ input {
   }
 
   #contactMain {
-    background-image: url('../images/stars-1128772_1280.jpg');
-    
+    /* background-image: url('../images/stars-1128772_1280.jpg'); */
+    background-image: url('../images/contactbk.gif');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
   }
 
+  #contactMain h1 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   #contactMain img {
     opacity: 0.8;
   }
-  
-  .contactSection section {
-    opacity: reset;
-    
-  }
+ 
   
   /* Portfolio */
 
@@ -386,13 +387,13 @@ input {
 
   .projectGroup[data-scroll="in"], 
   .portfolioSection[data-scroll="in"],
-  .contactSection[data-scroll="in"],
-  .aboutGroup[data-scroll="in"] {
+  .contactSection[data-scroll="in"]{
     opacity: 1;
     transform: translateY(-80px);
   }
 
-  .aboutSection[data-scroll="in"] {
+  .aboutSection[data-scroll="in"],
+  .aboutGroup[data-scroll="in"]  {
     opacity: 1;
     transform: translateY(-160px);
   }
@@ -407,7 +408,8 @@ input {
 
   
 .portfolioSection h1 {
-  padding-top: 1em;
+  padding-top: 0;
+  margin-top: 1em;
   padding-bottom: 2em;
   font-size: 3.5em;
 }
@@ -581,11 +583,22 @@ input {
 
   .projectGroup[data-scroll="in"], 
   .portfolioSection[data-scroll="in"],
-  .contactSection[data-scroll="in"],
-  .aboutGroup[data-scroll="in"] {
+  .contactSection[data-scroll="in"]{
     opacity: 1;
     transform: translateY(-40px);
   }
+
+  .aboutSection[data-scroll="in"],
+  .aboutGroup[data-scroll="in"]  {
+    opacity: 1;
+    transform: translateY(-60px);
+  }
+
+  .myImg {
+    margin-top: 2em;
+    font-size: 0.8em;
+  }
+  
 } /* media max-width: 600px */
 
 @media screen and (min-width: 601px) {
