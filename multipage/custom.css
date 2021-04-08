@@ -241,6 +241,8 @@ main {
 
 .vImg {
   width: 50%;
+  margin: auto;
+  align-content: center;
 }
 
 .smallTxt {
