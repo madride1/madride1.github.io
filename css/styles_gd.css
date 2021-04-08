@@ -30,6 +30,8 @@
     text-shadow:   4px 4px 4px rgb(255, 255, 255),
                    5px 5px 5px black;
     -webkit-text-stroke: 1px white;
+    padding-top: 1em;
+    margin-top: 0;
 }
 
 .sectionGroup h2{

@@ -68,6 +68,7 @@ window.onclick = function(event) {
 jQuery(document).ready(function() {
   jQuery("#gd").on("click", function() {
       mainModal.style.display = "block";
+      jQuery(".mainModal-content").css({"background-color":"rgb(217, 217, 248)"});
       jQuery.get('index_gd.html',function(data){
           jQuery("#mainProject").html(data);
       });    
@@ -75,7 +76,16 @@ jQuery(document).ready(function() {
 
   jQuery("#swm").on("click", function() {
     mainModal.style.display = "block";
+    jQuery(".mainModal-content").css({"background-color":"#1B7381"});
     jQuery.get('kidsTrivia.html',function(data){
+        jQuery("#mainProject").html(data);
+    });    
+  });
+  
+  jQuery("#craftyGifts").on("click", function() {
+    mainModal.style.display = "block";
+    jQuery.get('craftygifts.html',function(data){
+        jQuery(".mainModal-content").css({"background-color":"#F8F8F8"});
         jQuery("#mainProject").html(data);
     });    
   });

@@ -447,7 +447,7 @@ input {
   margin-top: 2em;
 }
 
-main {
+#mainIdx {
   height: 100vh;
 }
 
@@ -574,3 +574,4 @@ main {
     padding-bottom: 2em;
   }
 }
+
