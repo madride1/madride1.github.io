@@ -36,20 +36,20 @@ var trigModal = document.getElementById("sendMsg");
 var span = document.getElementsByClassName("close")[0];
 
 // Open Modal 
-trigModal.onclick = function() {
-  modal.style.display = "block";
-}
+// trigModal.onclick = function() {
+//   modal.style.display = "block";
+// }
 
 // Close Modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 
 
 var mainSpan = document.getElementsByClassName("mainClose")[0];
@@ -86,6 +86,19 @@ jQuery(document).ready(function() {
         jQuery("#mainProject").html(data);
     });    
   });
+  
+  window.onscroll = function() {scrollFunction()};
+
+    const scrollFunction = () => {
+    let toTop = document.getElementById('returnToTop');
+    
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      toTop.style.display = "block";
+    } else {
+      toTop.style.display = "none";
+    }
+  }
+
 })
 
 //Line Animation
@@ -140,4 +153,5 @@ function homeAnimation() {
       delay: 2000
     });
 }
+
 
