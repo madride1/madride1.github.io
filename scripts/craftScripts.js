@@ -48,7 +48,7 @@ function arrayToHtml() {
     }
     
     document.getElementById("tipData").innerHTML = fullString;
-    console.log(fullString);
+    // console.log(fullString);
 
 }
 
@@ -82,13 +82,19 @@ function writeToArray()
 }
 
 function projectList () {
-    var picString = '';
-                      for(var i = 1; i <= 34; i++)
-                      {
-                          picString += '<figure><img src="images/craftgallery/' + i +'.jpg" alt="craft picture">' + '</figure>';
-                         
-                      }
-                      document.getElementById("pictures").innerHTML = picString;
+    let imgCard;
+    let divCard;
+
+        for (let i = 1; i < 34; i++){
+            divCard = document.createElement("div");
+            divCard.setAttribute("class","card col-md-3 col-lg-2 text-center");
+            imgCard = document.createElement("img");
+            imgCard.setAttribute("src","images/craftgallery/" + i +".jpg")
+            imgCard.setAttribute("alt","craft picture");
+            imgCard.setAttribute("class","d-flex flex-column align-self-center my-auto");
+            divCard.appendChild(imgCard);
+            document.getElementById("pictures").appendChild(divCard);
+        }
 }
 
 jQuery(document).ready(function() {

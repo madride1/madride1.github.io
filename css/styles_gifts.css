@@ -107,3 +107,44 @@
         width: 90%;
     }
 }
+
+
+#pictures {
+    margin: auto;
+    align-content: center;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(128, 128, 128, 0.582);
+    padding: 1em;
+    margin: 0.4em;
+    width: 20em;
+    height: 17em;
+    align-content: center;
+    border-radius: 2em;
+}
+
+.card img{
+    margin: auto;
+    align-self: center;
+}
+
+#gal .container {
+    margin: auto;
+    align-content: center;
+    padding: 0;
+}
+
+.pCat {
+    background-color: rgba(196, 196, 196, 0.26);
+
+}
+
+#projectCard .card{
+    padding: 1em;
+    margin: 0.4em;
+    width: 25em;
+    height: 13em;
+
+}
