@@ -91,7 +91,6 @@ function projectList () {
             imgCard = document.createElement("img");
             imgCard.setAttribute("src","images/craftgallery/" + i +".jpg")
             imgCard.setAttribute("alt","craft picture");
-            imgCard.setAttribute("class","d-flex flex-column align-self-center my-auto");
             divCard.appendChild(imgCard);
             document.getElementById("pictures").appendChild(divCard);
         }
