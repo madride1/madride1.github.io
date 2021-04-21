@@ -7,6 +7,9 @@ document.getElementById("mainNav").innerHTML = '<a href="index.html" id="home"> 
           <i class="fa fa-bars"></i>  \
       </a>';
 
+
+
+
 function collapseMenu() {
     let cn = document.getElementById("mainNav");
     if (cn.className === "mainNav") {
@@ -98,6 +101,14 @@ jQuery(document).ready(function() {
     });    
   });
   
+  jQuery("#resume").on("click", function() {
+    mainModal.style.display = "block";
+    jQuery(".mainModal-content").css({"background-color":"rgb(223,213,190)"});
+    jQuery.get('SoftwareDeveloper_Madrid-Luna_Elizabeth.html',function(data){
+        jQuery("#mainProject").html(data);
+    });    
+  });
+
   window.onscroll = function() {scrollFunction()};
 
     const scrollFunction = () => {

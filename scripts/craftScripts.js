@@ -89,7 +89,7 @@ function projectList () {
             divCard = document.createElement("div");
             divCard.setAttribute("class","card col-md-3 col-lg-2 text-center");
             imgCard = document.createElement("img");
-            imgCard.setAttribute("src","images/craftgallery/" + i +".jpg")
+            imgCard.setAttribute("src","images/craftgallery/" + i +".jpg?xxxx="+ Date.now());
             imgCard.setAttribute("alt","craft picture");
             divCard.appendChild(imgCard);
             document.getElementById("pictures").appendChild(divCard);

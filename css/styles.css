@@ -84,13 +84,15 @@ h1 {
 /* Responsive */
 /* screens less than 600 pixels wide */
 @media screen and (max-width: 600px) {
-    .mainNav a {display: none;}
+    .mainNav a {
+      display: none;
+    }
+   
+
     .mainNav a.hamIcon {
       float: right;
       display: block;
     }
-
-
 
     .leftSide {
       float: left;
@@ -467,6 +469,12 @@ input {
 .myImg {
   margin-top: 2em;
   font-size: 1.5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+.resume {
+  padding-left: 4em;
 }
 
 #mainIdx {
@@ -500,11 +508,13 @@ input {
     position: absolute;
     right: 0;
     top: 0;
+    padding-right: 1em;
   }
   .mainNav.responsive a {
     float: none;
     display: block;
     text-align: left;
+    padding-right: 3em;
   }
 
   .iconImg {
