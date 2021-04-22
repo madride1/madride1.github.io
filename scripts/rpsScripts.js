@@ -30,31 +30,25 @@ var countC = 0;
 var countP = 0;
 var tie = 0;
 determineWinner = () => {
-
     if (computer == player) {
         tie++;
         win="No Winner: Tie";
-        console.log(win);
     } else {
         if ( (computer == 'Rock' && player == 'Scissor') ||
              (computer == 'Paper' && player == 'Rock') ||
              (computer == 'Scissor' && player == 'Paper')){
                  countC = countC +1;
-                 console.log(countC);
-                 $("#win").html("Computer wins");
+                 win="Computer wins";
              } else {
                  countP = countP +1;
-                 console.log(countC);
-                 $("#win").html("You win!!");
+                 win = "You win!!";
              }
     }
 }
 
 displayStats = () => {
-    console.log(countP);
-    console.log(countC);
+
     $('#win').html(win);
-    console.log(win);
     $('#stats').html(
         "<strong>Player</strong>:" + countP +" <br>" +
         "<strong>Computer</strong>:" + countC + " <br>" +
@@ -63,7 +57,6 @@ displayStats = () => {
 }
 
 jQuery(document).ready(function() {
-
     $('.scissor2').click(() =>{
         $('#scissor2').css('border','solid 2px black');
         $('#rock2').css('border','unset');
@@ -75,6 +68,7 @@ jQuery(document).ready(function() {
         $('#rock1').css('border','unset');
 
         randomSelect();
+        determineWinner();
         displayStats();
     });
     $('.rock2').click(() =>{
@@ -88,6 +82,7 @@ jQuery(document).ready(function() {
         $('#rock1').css('border','unset');
         
         randomSelect();
+        determineWinner();
         displayStats();
     });
     $('.paper2').click(() =>{
@@ -102,6 +97,7 @@ jQuery(document).ready(function() {
         $('#rock1').css('border','unset');
         
         randomSelect();
+        determineWinner();
         displayStats();
     });
 

@@ -1,7 +1,7 @@
 #mainRPS {
     background-image: url('../images/16525509184_ba0e90419f_c.jpg');
     width: 65vh;
-    height: 55vh;
+    height: 60vh;
     background-repeat: no-repeat;
     margin: auto;
     align-content: center;
@@ -23,18 +23,24 @@
     height: 14vh;
     padding: 2%;
 }
+#p1 img:hover,
+#p2 img:hover {
+    border: 1px solid green;
+}
 
 #rps h1{
     color: black;
     padding-top: 1%;
 }
-#winner {
-    color: red;
-    padding-left: 5vh;
+#win {
+    color: rgb(134, 18, 18);
+    padding-left: 25vh;
+    font-size: 1.5em;
 }
 #stats {
     color: navy;
-    padding-left: 5vh;
+    padding-left: 15vh;
+    font-size: 1em;
 }
 
 @media screen and (max-width: 660px) {
@@ -59,12 +65,10 @@
         height: 14vh;
         padding: 0;
     }
-    #winner {
-        color: red;
-        padding-left: 5vh;
+    #win {
+        padding-left: 15vh;
     }
     #stats {
-        color: navy;
         padding-left: 5vh;
     }
 
