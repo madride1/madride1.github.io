@@ -93,6 +93,14 @@ jQuery(document).ready(function() {
     });    
   });
 
+  jQuery("#dbPage").on("click", function() {
+    mainModal.style.display = "block";
+    jQuery.get('rps.html',function(data){
+        jQuery(".mainModal-content").css({"background-color":"#F8F8F8"});
+        jQuery("#mainProject").html(data);
+    });    
+  });
+
   jQuery("#contact").on("click", function() {
     mainModal.style.display = "block";
     jQuery(".mainModal-content").css({"background-color":"rgb(223,213,190)"});

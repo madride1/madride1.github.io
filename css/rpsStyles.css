@@ -1,0 +1,71 @@
+#mainRPS {
+    background-image: url('../images/16525509184_ba0e90419f_c.jpg');
+    width: 65vh;
+    height: 55vh;
+    background-repeat: no-repeat;
+    margin: auto;
+    align-content: center;
+}
+
+#field1, #field2 {
+    width: 60vh;
+    height: 20vh;
+    margin: auto;
+    align-content: center;
+}
+
+#p1, #p2 {
+    margin-left: 12vh;
+}
+
+#p1 img , #p2 img{
+    width: 12vh;
+    height: 14vh;
+    padding: 2%;
+}
+
+#rps h1{
+    color: black;
+    padding-top: 1%;
+}
+#winner {
+    color: red;
+    padding-left: 5vh;
+}
+#stats {
+    color: navy;
+    padding-left: 5vh;
+}
+
+@media screen and (max-width: 660px) {
+    #mainRPS {
+        width: 45vh;
+        height: 75vh;
+
+    }
+    
+    #field1, #field2 {
+        width: 40vh;
+        height: 20vh;
+
+    }
+    
+    #p1, #p2 {
+        margin-left: 0;
+    }
+    
+    #p1 img , #p2 img{
+        width: 11vh;
+        height: 14vh;
+        padding: 0;
+    }
+    #winner {
+        color: red;
+        padding-left: 5vh;
+    }
+    #stats {
+        color: navy;
+        padding-left: 5vh;
+    }
+
+}
