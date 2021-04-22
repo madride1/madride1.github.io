@@ -96,7 +96,7 @@ jQuery(document).ready(function() {
   jQuery("#dbPage").on("click", function() {
     mainModal.style.display = "block";
     jQuery.get('rps.html',function(data){
-        jQuery(".mainModal-content").css({"background-color":"#F8F8F8"});
+        jQuery(".mainModal-content").css({"background-color":"rgba(46, 147, 230, 0.904)"});
         jQuery("#mainProject").html(data);
     });    
   });
