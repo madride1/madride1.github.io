@@ -99,4 +99,7 @@ function projectList () {
 jQuery(document).ready(function() {
     $("#g-tips").click(arrayToHtml());
     $("#g-gallery").click(projectList());
+    $("#craftySubmit").click(() =>{
+        $("#cError").html('Thank you');
+    });
 });
