@@ -29,15 +29,16 @@
             <div id="formH">
                 <div id="contactF">
                     <label for="inputName"> Name: </label> 
-                        <input type="text" name="inputName">
+                        <input type="text" id="cInputName" name="inputName">
                     <label for="inputEmail"> Email: </label>
-                        <input type="email" name="inputEmail">
+                        <input type="email" id="cInputEmail" name="inputEmail">
                     <label for="inputPhone"> Phone: </label>
-                        <input type="tel" name="inputPhone">
-                    <label for="inputMessage">Message</label>
-                        <input type="text" name="inputMessage">
-                    <button type="reset"> Reset</button>
-                    <button type="submit">Send Message</button>
+                        <input type="tel" id="cInputPhone" name="inputPhone">
+                    <label for="inputMessage">Message:</label>
+                        <textarea id="cInputMessage" name="inputMessage" rows=4 cols=50></textarea>
+                    <button type="reset" id="contactReset"> Reset</button>
+                    <button type="submit" id="contactSend">Send Message</button>
+                    <div id="error"></div>
                 </div>
             </div>
         </div>
@@ -46,5 +47,62 @@
     <!-- JavaScript functions -->
     <script src="scripts/scripts.js"> </script>
     <script>updateActive("contact");</script>
+    <script>
+    $(document).ready(function() {
+        $('#contactReset').on("click", function(){
+            $('#cInputName').val('');
+            $('#cInputEmail').val('');
+            $('#cInputPhone').val('');
+            $('#cInputMessage').val('');
+        });
+
+        $("#contactSend").on("click", function(){
+            var send=true;
+            var msg = '';
+            var rsp = 'Thank you ';
+            $('#error').html('');
+            if ($('#cInputEmail').val()){
+                var sender = $('#cInputEmail').val();
+            } else {
+                $('#error').html('Invalid email entered.')
+                send=false;
+            } 
+            if ($('#cInputMessage').val()){
+                msg = $('#cInputMessage').val();
+            } else {
+                $('#error').html('Invalid message entered.')
+                send=false;
+            }
+            if ($('#cInputName').val()){
+                var name = $('#cInputName').val();
+                msg = msg +"\n"+  name;
+                rsp = rsp + name;
+            } else {
+                $('#error').html('Invalid name entered.')
+                send=false;
+            }
+            if ($('#cInputPhone').val()){
+                var phone = $('#cInputPhone').val();
+                msg = msg +"\n"+ phone;
+            }
+            if (send == true){
+                Email.send({
+                Host: "smtp.gmail.com",
+                To: 'madridelun@gmail.com',
+                From: sender,
+                Subject: "Contact",
+                Body: msg,
+                })
+                .then(function (message) {
+                    rsp = rsp + " message sent successfully";
+                    alert(rsp);
+                });
+            }
+        });
+    
+    });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </body>
 </html>

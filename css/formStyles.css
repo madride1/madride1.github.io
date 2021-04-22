@@ -97,21 +97,34 @@ button:focus, button:hover{
     font-size: 0.5em;
     color: white;
     background-color:rgba(34, 33, 33, 0.856);
+    padding: 2em;
+    border-radius: 2em;
 }
 
-#contactF input{
+#contactF input,
+#contactF textarea{
     border: 0em;
-    border-bottom: 1px black;
     background-color: transparent;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    color: rgb(230, 255, 7);
+    padding-left: 0;
 }
 
-#contactF input:hover {
+#contactF input:hover,
+#contactF textarea:hover {
     background-color: grey;
     color: black;
+    font-weight: bold;
 }
 
 #contactF label {
     float: left;
+}
+
+#error {
+    color: red;
+    padding-top: 1em;
 }
 
 @media screen and (min-width: 768px) {
@@ -126,4 +139,9 @@ button:focus, button:hover{
         width: 50%;
         padding: 1em;
     }
+
+    #contactF input,
+    #contactF textarea{
+    padding-left: 2%;
+}
 }
