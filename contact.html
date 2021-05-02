@@ -94,6 +94,10 @@
                 Body: msg,
                 })
                 .then(function (message) {
+                    $('#cInputName').val('');
+                    $('#cInputEmail').val('');
+                    $('#cInputPhone').val('');
+                    $('#cInputMessage').val('');
                     rsp = rsp + " message sent successfully";
                     alert(rsp);
                 });
