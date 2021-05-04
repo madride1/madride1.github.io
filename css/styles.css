@@ -486,7 +486,7 @@ input {
 #returnToTop {
   position:fixed;
   bottom:0;
-  right: 2em;
+  right: 2.5em;
   font-size: 0.8em;
   display: none;
 }
@@ -658,7 +658,7 @@ input {
 
 @media screen and (min-width: 1300px) and (max-width: 1660px) {
   #returnToTop {
-    font-size: 0.7em;
+    font-size: 0.75em;
     right: 2.2em;
   }
 }
