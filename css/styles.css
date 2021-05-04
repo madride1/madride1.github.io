@@ -486,7 +486,7 @@ input {
 #returnToTop {
   position:fixed;
   bottom:0;
-  right: 2.5em;
+  right: 2.2em;
   font-size: 0.8em;
   display: none;
 }
