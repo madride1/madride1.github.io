@@ -1,4 +1,5 @@
-
+// adds the menu content to pages
+// at the end only used for home page
 document.getElementById("mainNav").innerHTML = '<a href="index.html" id="home"> Home</a>  \
       <a href="#portfolioS" id="portfolio">Portfolio</a>  \
       <a href="#about" id="aboutMe">About Me</a>  \
@@ -9,7 +10,8 @@ document.getElementById("mainNav").innerHTML = '<a href="index.html" id="home"> 
 
 
 
-
+// Needed to update className appropriately for 
+// main navigation to handle smaller screen menu bar
 function collapseMenu() {
     let cn = document.getElementById("mainNav");
     if (cn.className === "mainNav") {
@@ -19,6 +21,7 @@ function collapseMenu() {
     }
   }
 
+// updates active class when menu option is selected
 function updateActive(pageclass) {
   let pages = ['home', 'portfolio', 'aboutMe', 'contact'];
 
@@ -54,7 +57,6 @@ var span = document.getElementsByClassName("close")[0];
 //   }
 // }
 
-
 var mainSpan = document.getElementsByClassName("mainClose")[0];
 var mainModal = document.getElementById("mainModalDiv");
 // Close Modal
@@ -68,6 +70,9 @@ window.onclick = function(event) {
   }
 }
 
+// Handle menu selection to open model appropriately
+// by loading the correct file 
+// and changes modal background color
 jQuery(document).ready(function() {
   jQuery("#gd").on("click", function() {
       mainModal.style.display = "block";
@@ -109,22 +114,28 @@ jQuery(document).ready(function() {
     });    
   });
   
-  jQuery("#resume").on("click", function() {
-    mainModal.style.display = "block";
-    jQuery(".mainModal-content").css({"background-color":"rgb(223,213,190)"});
-    jQuery.get('SoftwareDeveloper_Madrid-Luna_Elizabeth.html',function(data){
-        jQuery("#mainProject").html(data);
-    });    
-  });
+  // about me section will load p
+  // jQuery("#resume").on("click", function() {
+  //   mainModal.style.display = "block";
+  //   jQuery(".mainModal-content").css({"background-color":"rgb(223,213,190)"});
+  //   jQuery.get('SoftwareDeveloper_Madrid-Luna_Elizabeth.html',function(data){
+  //       jQuery("#mainProject").html(data);
+  //   });    
+  // });
 
+  // Handle "Return To Top" image
+  // checks if user has scrolled down/up to trigger
+  // the image to be displayed
   window.onscroll = function() {scrollFunction()};
 
     const scrollFunction = () => {
     let toTop = document.getElementById('returnToTop');
     
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      // if scroll far enough display
       toTop.style.display = "block";
     } else {
+      // if close to top do not show image
       toTop.style.display = "none";
     }
   }
@@ -137,6 +148,7 @@ function homeAnimation() {
   let ml = [];
   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+  // handle animage for name
   ml["nameLine"]=anime.timeline({loop: true})
     .add({
       targets: '.nameLine .letter',
@@ -166,6 +178,7 @@ function homeAnimation() {
   textWrapper = document.querySelector('.positionLine .letters');
   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+  // handle animation for position
   ml["positionLine"]=anime.timeline({loop: true})
     .add({
       targets: '.positionLine .letter',

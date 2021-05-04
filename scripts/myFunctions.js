@@ -1,21 +1,21 @@
 /* Global variables */
-let toystory = [];
-let monsters = [];
-let grinch = [];
-let frozen = [];
-let i;  /* should probably user currentQuestion or some other name but i was shorter */
-let movie;
-let hint;
-let answer;
-let noMovie;
-let noQuestions;
-let btn;
+var toystory = [];
+var monsters = [];
+var grinch = [];
+var frozen = [];
+var i;  /* should probably user currentQuestion or some other name but i was shorter */
+var movie;
+var hint;
+var answer;
+var noMovie;
+var noQuestions;
+var btn;
 var modal = document.getElementById("myModal");
-let btn2;
+var btn2;
 var modal2 = document.getElementById("myModal2");
 
 /* define global JS array for movie and display function name */
-let movieList = [["toystory"],
+var movieList = [["toystory"],
                  ["monsters"],
                  ["grinch"],
                  ["frozen"]

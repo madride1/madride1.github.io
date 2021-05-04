@@ -1,8 +1,14 @@
-let computer = 'Rock';
-let player = 'Rock';
-let win = '';
+// global variables
+var computer = 'Rock';
+var player = 'Rock';
+var win = '';
 
-
+// function randomSelect used to determine
+// computer selection of rock, paper or scissors
+// Uses Math random function to make the selection
+// then updates to correct image/css clase to 
+// add border around image and remove border from 
+// other images not selected
 randomSelect= () => {
     let num = Math.floor((Math.random() * 3) + 1);
 
@@ -26,6 +32,9 @@ randomSelect= () => {
     }
 
 }
+
+// global variable to keep track winner or tie
+// for games played by player against computer
 var countC = 0;
 var countP = 0;
 var tie = 0;
@@ -46,6 +55,7 @@ determineWinner = () => {
     }
 }
 
+// updates states shown on page
 displayStats = () => {
 
     $('#win').html(win);
@@ -56,17 +66,23 @@ displayStats = () => {
     );
 }
 
+//handle user selection.  Once user clicks on the image
+// adds border for selection and removes border from other
+// images
 jQuery(document).ready(function() {
     $('.scissor2').click(() =>{
         $('#scissor2').css('border','solid 2px black');
         $('#rock2').css('border','unset');
         $('#paper2').css('border','unset');
-        player = "Scissor"
+        player = "Scissor";
 
         $('#scissor1').css('border','unset');
         $('#paper1').css('border','unset');
         $('#rock1').css('border','unset');
 
+        // once user makes a selection call
+        // randomSelect for computer selection
+        // find out who wins and display stats on page
         randomSelect();
         determineWinner();
         displayStats();
@@ -75,7 +91,7 @@ jQuery(document).ready(function() {
         $('#rock2').css('border','solid 2px black');
         $('#scissor2').css('border','unset');
         $('#paper2').css('border','unset');
-        player = "Rock"
+        player = "Rock";
 
         $('#scissor1').css('border','unset');
         $('#paper1').css('border','unset');

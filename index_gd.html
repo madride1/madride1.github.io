@@ -14,12 +14,14 @@
 
     </head>
     <body>
+        <!-- start of site sectioned in grid layout-->
         <div class="grid" id="gdBody">
+            <!-- header spans top of page-->
             <header class="gdPage">
                
                 <h1> My Photoshop Projects</h1>
             </header>
-            
+            <!-- navigation menu located on left of page-->
             <div id="top" class="sectionGroup" data-scroll2>
             <nav class="flex_nav" id="flex_nav">
                 <ul >
@@ -37,6 +39,7 @@
             </nav>
 
             </div> <!-- end id top -->
+            <!-- introduction grid to right of menu-->
             <main id="intro" class="sectionGroup" data-scroll2>
                 <h2>Introduction</h2>
                 <p> 
@@ -55,6 +58,7 @@
                 </p>
             </main>
 
+            <!-- gallery grid spans width of page -->
             <aside id="gallery" class="sectionGroup" data-scroll>
                 <h2> Picture Gallery - final version</h2>
                   <div class="gal">
@@ -67,6 +71,7 @@
                   </div>
             </aside>
 
+            <!-- subsequent grid spans width of page for each photo section in gallery-->
             <section id="photo1"  class="sectionGroup" data-scroll>
                 <h2>Photo1- Cygne Sauvage</h2>
                 <p>
@@ -185,6 +190,7 @@
                 </div>
             </section>
 
+            <!-- footer grid-->
             <footer id="aboutME" class="sectionGroup" data-scroll>
                 <h2> About Me</h2>
                 <p>
@@ -211,6 +217,7 @@
         <script>
             ScrollOut({ })
             
+            // handle the collapse of menu navigation
             function collapseMenu() {
                 let cn = document.getElementById("flex_nav");
                 if (cn.className === "flex_nav") {

@@ -48,7 +48,10 @@
     <script src="scripts/scripts.js"> </script>
     <script>updateActive("contact");</script>
     <script>
+
+    
     $(document).ready(function() {
+        // clear contents of form when user selects reset button
         $('#contactReset').on("click", function(){
             $('#cInputName').val('');
             $('#cInputEmail').val('');
@@ -56,6 +59,8 @@
             $('#cInputMessage').val('');
         });
 
+        // when user select send provide input 
+        // validation and alert message sent
         $("#contactSend").on("click", function(){
             var send=true;
             var msg = '';

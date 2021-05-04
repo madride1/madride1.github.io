@@ -81,6 +81,7 @@ function writeToArray()
     document.getElementById('tipsForm').reset();
 }
 
+// add gallery images to project page
 function projectList () {
     let imgCard;
     let divCard;
@@ -97,8 +98,13 @@ function projectList () {
 }
 
 jQuery(document).ready(function() {
+    // handle when tips page is selected 
+    // call function to add tips to page
     $("#g-tips").click(arrayToHtml());
+    // when project gallery page is selected
+    // call function to display images for gallery
     $("#g-gallery").click(projectList());
+    // once user submits display Thank you
     $("#craftySubmit").click(() =>{
         $("#cError").html('Thank you');
     });
